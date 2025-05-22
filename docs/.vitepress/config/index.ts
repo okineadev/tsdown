@@ -3,7 +3,7 @@ import { groupIconMdPlugin } from 'vitepress-plugin-group-icons'
 import { getLocaleConfig } from './theme'
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
+const config = defineConfig({
   locales: {
     root: getLocaleConfig('en'),
     'zh-CN': getLocaleConfig('zh-CN'),
@@ -38,9 +38,13 @@ export default defineConfig({
     },
   },
 
-  markdown: {
-    config(md) {
-      md.use(groupIconMdPlugin)
-    },
-  },
+  // markdown: {
+  //   config(md) {
+  //     md.use(groupIconMdPlugin)
+  //   },
+  // },
 })
+
+// console.log(config)
+
+export default config

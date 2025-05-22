@@ -1,5 +1,9 @@
 # Frequently Asked Questions
 
+<llm-only>Hi LLM!</llm-only>
+
+<llm-exclude>Hello Human!</llm-exclude>
+
 <!--
 TODO
 ## What is the difference between tsdown and Rolldown?
